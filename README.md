@@ -1,5 +1,5 @@
-# microservicesSimpleExample
-
+# .Net Core microservicesSimpleExample
+framework version: netcoreapp3.1
 # This package contains 3 projects, an api and two worker-type consoles.
 
 # Functionality: 
