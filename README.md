@@ -2,7 +2,8 @@
 
 # This package contains 3 projects, an api and two worker-type consoles.
 
-# Functionality: You can register a new recipe and consult a recipe already registered.
+# Functionality: 
+You can register a new recipe and consult a recipe already registered.
 
 # Flow:
 1. POST with the json that I will place below, api will send this contract to a rabbitmq queue.
@@ -33,3 +34,13 @@ POST: https: // localhost: 44376 / api / recipe
 }
 
 GET: https: // localhost: 44376 / api / recipe / id
+
+# Customize
+Settings such as bank connection string are already added in appsettings
+
+The names of the rabbitMQ queues are also, if you want to change, here's an example:
+"Queues": {
+     "NoSqlRegister": {// Queue name
+       "PrefixForRetriable": "nosql-register" //prefix name to retriable queue
+     }
+   }
